@@ -1,11 +1,11 @@
 const numB = document.getElementsByClassName("buscador")
 const botonBuscar = document.getElementsByClassName("boton")
-const lista = document.getElementsByClassName("lista")
-let label = document.getElementsByClassName('label')
+let lista = document.getElementsByClassName("lista")
 
 const numBalon = numB.value
 
-const buscarBalon=()=>{
+const buscarBalon=()=>{    
+
  if(numBalon){
     fetch("mongodb://localhost:27017/airBackEnd/cilindro",{
             method: "GET",
@@ -19,6 +19,8 @@ const buscarBalon=()=>{
         
     }
     else{
-        alert("Debe ingresar numero de balon")
+        let label = document.querySelector('.label');
+        label.textContent = "Debe ingresar un número de balón.";
+        label.style.color = "red";
     }
 };
