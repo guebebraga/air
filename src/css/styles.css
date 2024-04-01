@@ -9,7 +9,6 @@
     background-image: url('https://emergenciaenlinea.com/wp-content/uploads/2018/12/balones-de-gas.jpg');
     background-repeat: no-repeat;
     background-position:right;
-    
   }
   main{
     height: 100%;
@@ -37,4 +36,10 @@ font-size:18px;
 color: dimgrey;
 background-color:beige ;  
 cursor:pointer;
+}
+
+#resultado{
+  margin-top: 60px;
+  font-size:larger;
+  color: brown;
 }
