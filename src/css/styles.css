@@ -39,7 +39,12 @@ cursor:pointer;
 }
 
 #resultado{
+  margin-left:25px;
   margin-top: 60px;
-  font-size:larger;
+  font-size:medium;
   color: brown;
+}
+.o2Img{
+  height:350px;
+  width:350px;
 }
