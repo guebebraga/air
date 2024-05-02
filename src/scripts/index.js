@@ -4,7 +4,7 @@ const buscarBalon = () => {
     const resultadoDiv = document.getElementById("resultado");
 
     if (!num.value) {
-        let label = document.querySelector('.label');
+        const label = document.querySelector('.label');
         label.textContent = "Debe ingresar un número de balón.";
         label.style.color = "red";
         return; // Detener la ejecución si no se proporciona un número de balón
@@ -58,6 +58,9 @@ const buscarBalon = () => {
             resultadoDiv.appendChild(cilindroNum);
             resultadoDiv.appendChild(cilindroCarga)
             resultadoDiv.appendChild(cilindroImg)
+        }
+        else{
+            label.textContent = data.mensaje
         }
     })
     .catch(error => console.error('Error:', error));
