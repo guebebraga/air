@@ -1,3 +1,4 @@
+/*
 *{
     margin: 0;
     padding: 0;
@@ -47,4 +48,77 @@ cursor:pointer;
 .o2Img{
   height:350px;
   width:350px;
+}
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: #f0f0f0 url('https://saludconlupa.com/media/images/oxigeno-medicinal.width-1920.jpg');
+  background-size:contain;
+}
+
+main {
+  height: calc(100% - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#buscador {
+  height: 35px;
+  width: 450px;
+  margin-top: 20px;
+  padding: 0 15px;
+  border-radius: 20px;
+  border: 2px solid #999;
+  font-size: 16px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+#buscador:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.boton {
+  height: 35px;
+  width: 80px;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #0056b3;
+}
+
+#resultado {
+  margin-top: 40px;
+  font-size: 18px;
+  color: #333;
+}
+
+.o2Img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 40px;
 }
