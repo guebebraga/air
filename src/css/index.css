@@ -61,7 +61,7 @@ html, body {
   height: 100%;
   font-family: Arial, sans-serif;
   background: #f0f0f0 url('https://saludconlupa.com/media/images/oxigeno-medicinal.width-1920.jpg');
-  background-size:contain;
+  background-size:auto;
 }
 
 main {

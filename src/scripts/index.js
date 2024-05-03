@@ -42,22 +42,18 @@ const buscarBalon = () => {
             const cilindroNum = document.createElement('p')
             const cilindroDes = document.createElement('p')
             const cilindroCarga = document.createElement('p')
-            const cilindroImg = document.createElement('img')
+           
 
             cilindroNombre.textContent = `Nombre:  ${data.cilindro.nombreGas}`
             cilindroNum.textContent = `num: ${data.cilindro.num}`
             cilindroDes.textContent = `Descripcion:  ${data.cilindro.descripcion}`
             cilindroCarga.textContent = `Carga: ${data.cilindro.carga}` 
-            cilindroImg.src = data.cilindro.urlImg
-
-            cilindroImg.classList.add('o2Img');
             
-
             resultadoDiv.appendChild(cilindroNombre);
             resultadoDiv.appendChild(cilindroDes);
             resultadoDiv.appendChild(cilindroNum);
             resultadoDiv.appendChild(cilindroCarga)
-            resultadoDiv.appendChild(cilindroImg)
+            
         }
         else{
             label.textContent = data.mensaje
